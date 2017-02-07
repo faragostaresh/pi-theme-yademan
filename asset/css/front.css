@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #44BCDD;
+    color: #0585CA;
 }
 
 a:hover {
@@ -90,8 +90,12 @@ h5, h6 {
 
 .pi-block-title {
     padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
 }
 
+.pi-block-title h2 ,
 .pi-block-title h3 {
     font-size: 1.2em;
     padding: 0;
@@ -343,7 +347,7 @@ form .icon-question-sign {
 
 /* header */
 .pi-header {
-    color: #44BCDD;
+    color: #0585CA;
 }
 
 .pi-header h1,
@@ -353,14 +357,12 @@ form .icon-question-sign {
     font-size: 35px;
 }
 
-.pi-header .pi-header-body {
-
+.pi-header .pi-header-body .pi-header-logo img {
+    max-height: 40px;
 }
 
 .pi-header .navbar-default {
     margin-bottom: 0;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     border-radius: 0;
     background-color: #1E2B33;
     border-color: #1E2B33;
@@ -378,26 +380,26 @@ form .icon-question-sign {
 .pi-header .navbar-default .navbar-nav > li > a:hover,
 .pi-header .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
-    background-color: #44BCDD;
+    background-color: #0585CA;
 }
 
 .pi-header .navbar-default .navbar-nav > .active > a,
 .pi-header .navbar-default .navbar-nav > .active > a:hover,
 .pi-header .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #44BCDD;
+    background-color: #0585CA;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color: #44BCDD;
+    background-color: #0585CA;
 }
 
 
 .pi-header .pi-header-pinkbar {
-    background-color: #44BCDD;
+    background-color: #0585CA;
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
     z-index: 10 !important;
@@ -561,12 +563,12 @@ form .icon-question-sign {
 }
 
 .pi-footer .pi-footer-copyright {
-    background-color: #1E2B33;;
+    background-color: #1E2B33;
 }
 
 .pi-footer .pi-footer-copyright .container .row {
     border-top: 1px solid #666;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .pi-footer .pi-footer-social ul {
@@ -590,7 +592,7 @@ form .icon-question-sign {
     border-top-color: #1E2B33;;
 }
 .panel-default > .panel-heading .badge {
-    color: #44BCDD;
+    color: #0585CA;
     background-color: #1E2B33;;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {

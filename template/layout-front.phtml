@@ -27,7 +27,7 @@ $this->bootstrap(array(
 // Load front.css
 $this->css(array(
     $this->assetTheme('css/front.css'),
-    $this->assetTheme('css/animate.min.css'),
+    //$this->assetTheme('css/animate.min.css'),
 ));
 
 // Load localization css
@@ -107,7 +107,7 @@ $breadcrumbs = $this->breadcrumb(
     <div class="pi-header-body">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 pi-header-logo">
                     <?php if ($module == 'system') { ?>
                         <h1>
                             <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
@@ -223,7 +223,7 @@ $breadcrumbs = $this->breadcrumb(
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
                         <div class="about-icon">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-calendar"></i>
                         </div>
                         <div class="about-title">برگزاری تور</div>
                         <p class="about-p">یادمان برگزار کننده تور های کوهنوردی و طبیعت گردی</p>
@@ -231,7 +231,7 @@ $breadcrumbs = $this->breadcrumb(
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
                         <div class="about-icon">
-                            <i class="fa fa-cloud-upload"></i>
+                            <i class="fa fa-camera"></i>
                         </div>
                         <div class="about-title">بهترین خاطرات</div>
                         <p class="about-p">با هم دیگر بهترین خاطرات سفر را رقم می زنیم</p>
@@ -239,7 +239,7 @@ $breadcrumbs = $this->breadcrumb(
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
                         <div class="about-icon">
-                            <i class="fa fa-lightbulb-o"></i>
+                            <i class="fa fa-users"></i>
                         </div>
                         <div class="about-title">تجربه جدید</div>
                         <p class="about-p">لذت تجربه های جدید در سفر و گشت گذار در طبیعت</p>
@@ -380,37 +380,58 @@ $breadcrumbs = $this->breadcrumb(
             <div class="row">
                 <div class="clearfix">
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <h3>ویدیو ها</h3>
+                        <h3><a title="تور ها" href="<?php echo Pi::url($this->url('home')); ?>event">تور ها</a></h3>
                         <ul class="list-unstyled">
-                            <li><a title="ویدیو های غذا" href="<?php echo Pi::url($this->url('home')); ?>video/food"><i class="fa fa-angle-left"></i> ویدیو های غذا</a></li>
-                            <li><a title="ویدیو های پیش غذا" href="<?php echo Pi::url($this->url('home')); ?>video/appetizer"><i class="fa fa-angle-left"></i> ویدیو های پیش غذا</a></li>
-                            <li><a title="ویدیو های دسر" href="<?php echo Pi::url($this->url('home')); ?>video/dessert"><i class="fa fa-angle-left"></i> ویدیو های دسر</a></li>
-                            <li><a title="ویدیو های نوشیدنی گرم" href="<?php echo Pi::url($this->url('home')); ?>video/hot-drink"><i class="fa fa-angle-left"></i> ویدیو های نوشیدنی گرم</a></li>
-                            <li><a title="ویدیو های نوشیدنی سرد" href="<?php echo Pi::url($this->url('home')); ?>video/cold-drink"><i class="fa fa-angle-left"></i> ویدیو های نوشیدنی سرد</a></li>
-                            <li><a title="ویدیو های کیک و شیرینی" href="<?php echo Pi::url($this->url('home')); ?>video/cake-and-candy"><i class="fa fa-angle-left"></i> ویدیو های کیک و شیرینی</a></li>
+                            <li>
+                                <a title="تورهای طبیعت گردی" href="<?php echo Pi::url($this->url('home')); ?>event/ecotourism"><i class="fa fa-angle-left"></i> تورهای طبیعت گردی</a>
+                            </li>
+                            <li>
+                                <a title="تورهای کوهنوردی" href="<?php echo Pi::url($this->url('home')); ?>event/mountaineering"><i class="fa fa-angle-left"></i> تورهای کوهنوردی</a>
+                            </li>
+                            <li>
+                                <a title="تورهای صحرانوردی" href="<?php echo Pi::url($this->url('home')); ?>event/cross-country"><i class="fa fa-angle-left"></i> تورهای صحرانوردی</a>
+                            </li>
+                            <li>
+                                <a title="تورهای تاریخی" href="<?php echo Pi::url($this->url('home')); ?>event/historical"><i class="fa fa-angle-left"></i> تورهای تاریخی</a>
+                            </li>
+                            <li>
+                                <a title="تورهای عکاسی" href="<?php echo Pi::url($this->url('home')); ?>event/photography"><i class="fa fa-angle-left"></i> تورهای عکاسی</a>
+                            </li>
+                            <li>
+                                <a title="تورهای رصد" href="<?php echo Pi::url($this->url('home')); ?>event/observation"><i class="fa fa-angle-left"></i> تورهای رصد</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <h3>سایر بخش ها</h3>
                         <ul class="list-unstyled">
-                            <li><a title="تمام ویدیو ها" href="<?php echo Pi::url($this->url('home')); ?>video"><i class="fa fa-angle-left"></i> تمام ویدیو ها</a></li>
-                            <li><a title="وبلاگ" href="<?php echo Pi::url($this->url('home')); ?>blog"><i class="fa fa-angle-left"></i> وبلاگ</a></li>
-                            <li><a title="درباره ما" href="<?php echo Pi::url($this->url('home')); ?>page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a></li>
-                            <li><a title="تماس با ما" href="<?php echo Pi::url($this->url('home')); ?>contact"><i class="fa fa-angle-left"></i> تماس با ما</a></li>
-                            <li><a title="قوانین و مقررات" href="<?php echo Pi::url($this->url('home')); ?>page/terms-and-condition"><i class="fa fa-angle-left"></i> قوانین و مقررات</a></li>
-                            <li><a title="راهنمای سایت" href="<?php echo Pi::url($this->url('home')); ?>page/guide"><i class="fa fa-angle-left"></i> راهنمای سایت</a></li>
-                            <li><a title="همکاری با ما" href="<?php echo Pi::url($this->url('home')); ?>page/cooperation"><i class="fa fa-angle-left"></i> همکاری با ما</a></li>
+                            <li>
+                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>news/travel-tips"><i class="fa fa-angle-left"></i> نکات سفر</a>
+                            </li>
+                            <li>
+                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>news/video-memory"><i class="fa fa-angle-left"></i> خاطره های تصویری</a>
+                            </li>
+                            <li>
+                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>page/faq"><i class="fa fa-angle-left"></i> سوالات متداول</a>
+                            </li>
+                            <li>
+                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>contact"><i class="fa fa-angle-left"></i> تماس با ما</a>
+                            </li>
+                            <li>
+                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <h2>درباره ما</h2>
-                        <p>با اولین سایت ویدئویی آشپزی ، آشپزی را یاد بگیر و یاد بده و هر روز لذت طعم های متفاوت و خوشمزه را به خودت و عزیزانت هدیه کن.</p>
+                        <p>گروه کوهنوردی و طبیعت گردی یادمان با مجوز رسمی از فدراسیون کوهنوردی و صعودهای ورزشی و هیئت کوهنوردی استان تهران از سال 1388 در دانشگاه علوم تحقیقات تهران و با همکاری کانون دانشجویی هلال احمر فعالیت های آموزشی و ورزشی خود را آغاز نموده و امروز به صورت مستقل به فعالیت های خود ادامه داده و از معدود گروه های کوهنوردی و طبیعت گردی می‏ باشد</p>
                         <div class="pi-footer-social text-right">
                             <h2>شبکه های اجتماعی</h2>
                             <ul class="list-inline">
+                                <li><a target="_blank" title="" href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_blank" title="" href="#"><i class="fa fa-telegram"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-facebook-square"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a target="_blank" title="" href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-google-plus-square"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-linkedin-square"></i></a></li>
                             </ul>
