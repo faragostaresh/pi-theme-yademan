@@ -67,7 +67,13 @@ $this->headMeta('width=device-width, initial-scale=1.0', 'viewport');
 // Explicitly load favicon
 $this->headLink(array(
     'rel'   => 'shortcut icon',
+    'type'  => 'image/x-icon',
     'href'  => $this->favicon(),
+));
+$this->headLink(array(
+    'rel'   => 'shortcut icon',
+    'type'  => 'image/png',
+    'href'  => $this->favicon('favicon.png'),
 ));
 
 // Load google analytics code
@@ -380,8 +386,11 @@ $breadcrumbs = $this->breadcrumb(
             <div class="row">
                 <div class="clearfix">
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <h3><a title="تور ها" href="<?php echo Pi::url($this->url('home')); ?>event">تور ها</a></h3>
+                        <h3>دسته بندی تورها</h3>
                         <ul class="list-unstyled">
+                            <li>
+                                <a title="همه تورها" href="<?php echo Pi::url($this->url('home')); ?>event"><i class="fa fa-angle-left"></i> همه تورها</a>
+                            </li>
                             <li>
                                 <a title="تورهای طبیعت گردی" href="<?php echo Pi::url($this->url('home')); ?>event/ecotourism"><i class="fa fa-angle-left"></i> تورهای طبیعت گردی</a>
                             </li>
@@ -406,27 +415,30 @@ $breadcrumbs = $this->breadcrumb(
                         <h3>سایر بخش ها</h3>
                         <ul class="list-unstyled">
                             <li>
-                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>news/travel-tips"><i class="fa fa-angle-left"></i> نکات سفر</a>
+                                <a title="نکات سفر" href="<?php echo Pi::url($this->url('home')); ?>news/travel-tips"><i class="fa fa-angle-left"></i> نکات سفر</a>
                             </li>
                             <li>
-                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>news/video-memory"><i class="fa fa-angle-left"></i> خاطره های تصویری</a>
+                                <a title="خاطره های تصویری" href="<?php echo Pi::url($this->url('home')); ?>news/video-memory"><i class="fa fa-angle-left"></i> خاطره های تصویری</a>
                             </li>
                             <li>
-                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>page/faq"><i class="fa fa-angle-left"></i> سوالات متداول</a>
+                                <a title="سوالات متداول" href="<?php echo Pi::url($this->url('home')); ?>page/faq"><i class="fa fa-angle-left"></i> سوالات متداول</a>
                             </li>
                             <li>
-                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>contact"><i class="fa fa-angle-left"></i> تماس با ما</a>
+                                <a title="تماس با ما" href="<?php echo Pi::url($this->url('home')); ?>contact"><i class="fa fa-angle-left"></i> تماس با ما</a>
                             </li>
                             <li>
-                                <a title="" href="<?php echo Pi::url($this->url('home')); ?>page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a>
+                                <a title="درباره ما" href="<?php echo Pi::url($this->url('home')); ?>page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a>
+                            </li>
+                            <li>
+                                <a title="شرایط و مقررات" href="<?php echo Pi::url($this->url('home')); ?>page/term-and-condition"><i class="fa fa-angle-left"></i> شرایط و مقرراتا</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h2>درباره ما</h2>
+                        <h3>درباره ما</h3>
                         <p>گروه کوهنوردی و طبیعت گردی یادمان با مجوز رسمی از فدراسیون کوهنوردی و صعودهای ورزشی و هیئت کوهنوردی استان تهران از سال 1388 در دانشگاه علوم تحقیقات تهران و با همکاری کانون دانشجویی هلال احمر فعالیت های آموزشی و ورزشی خود را آغاز نموده و امروز به صورت مستقل به فعالیت های خود ادامه داده و از معدود گروه های کوهنوردی و طبیعت گردی می‏ باشد</p>
                         <div class="pi-footer-social text-right">
-                            <h2>شبکه های اجتماعی</h2>
+                            <h4>شبکه های اجتماعی</h4>
                             <ul class="list-inline">
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a target="_blank" title="" href="#"><i class="fa fa-telegram"></i></a></li>

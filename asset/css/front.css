@@ -17,19 +17,25 @@ a:hover {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-family: 'Vazir-Bold';
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    font-family: 'Vazir-Bold';
 }
 
 h3, h4 {
     font-size: 1.2em;
+    font-family: 'Vazir-Bold';
+    padding: 2px 0;
+    margin: 1px 0;
 }
 
 h5, h6 {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: 'Vazir-Bold';
 }
 
 /* Bootstrap custom */
@@ -414,7 +420,9 @@ form .icon-question-sign {
 .pi-header .pi-header-pinkbar .pi-header-pinkbar-maintext {
     color: #fff;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    font-family: 'Vazir-Bold';
 }
 
 .pi-header .pi-header-pinkbar .about-icon {
@@ -430,8 +438,8 @@ form .icon-question-sign {
 .pi-header .pi-header-pinkbar .about-title,
 .pi-header .pi-header-pinkbar .about-title a {
     color: #fff;
-    font-family: 'Dancing Script', cursive  !important;
-    font-size: 1.8em;
+    font-family: 'Vazir-Bold';
+    font-size: 1.4em;
 }
 
 .pi-header .pi-header-pinkbar .about-title a:hover {
