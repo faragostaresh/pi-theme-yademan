@@ -617,3 +617,17 @@ form .icon-question-sign {
 }
 
 .widget-media-list-summery {}
+
+.pi-header-system .carousel-caption {
+    background: rgba(0, 52, 89, 0.60) !important;
+    padding: 5px 10px;
+    background: none;
+    margin-top: 3px;
+    line-height: 1.6;
+    -webkit-animation-duration: 1.3s;
+    -moz-animation-duration: 1.3s;
+}
+
+.pi-header-system .carousel-caption h4 {
+    font-size: 1.3em !important;
+}

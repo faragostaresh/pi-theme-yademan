@@ -147,77 +147,11 @@ $breadcrumbs = $this->breadcrumb(
         </div>
     </nav>
     <div class="pi-header-body">
-        <?php /* if ($module == 'system') { ?>
-            <div id="pi-header-slide" class="pi-header-system carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/header-1.jpg'); ?>" alt="آموزش آش‍پزی">
-                        <div class="carousel-caption">
-                            <div class="clearfix carousel-caption-body">
-                                <div class="col-md-12 col-sm-12 hidden-sm hidden-xs">
-                                    <div class="animated slideInDown">
-                                        <span>از آشپزی خود ویدیو تهیه کنید و به اشتراک بگذارید</span>
-                                    </div>
-                                    <div class="animated slideInLeft">
-                                        <h2><?php echo _escape($sitename); ?></h2>
-                                    </div>
-                                    <div class="animated slideInRight">
-                                        <div class="pi-header-socialindex">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/header-2.jpg'); ?>" alt="آموزش آشپزی">
-                        <div class="carousel-caption">
-                            <div class="clearfix carousel-caption-body">
-                                <div class="col-md-12 col-sm-12 hidden-sm hidden-xs">
-                                    <div class="animated slideInDown">
-                                        <span>می خواهید بدانید دیگران چگونه غذا درست می کنند؟</span>
-                                    </div>
-                                    <div class="animated slideInLeft">
-                                        <h2>در غذای آنلاین جستجو کنید و دستور پخت غذای و نوشیدنی دلخواه خود را بیابید؟</h2>
-                                    </div>
-                                    <div class="animated slideInRight">
-                                        <div class="pi-header-socialindex">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a rel="publisher" href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel nav -->
-                <a class="right carousel-control carousel-arrow" href="#pi-header-slide" data-slide="prev">
-                    <span class="icon-prev fa fa-chevron-left"></span>
-                </a>
-                <a class="left carousel-control carousel-arrow" href="#pi-header-slide" data-slide="next">
-                    <span class="icon-next fa fa-chevron-right"></span>
-                </a>
-                <script type="text/javascript">
-                    $("#pi-header-slide").carousel({
-                        "interval":"12000",
-                        "pause":"hover"
-                    });
-                </script>
+        <?php if ($module == 'system') { ?>
+            <div class="pi-header-system">
+                <?php echo $this->widget('widget-highlights'); ?>
             </div>
-        <?php } */ ?>
+        <?php } ?>
         <div class="pi-header-pinkbar">
             <div class="container">
                 <div class="row">
