@@ -17,25 +17,31 @@ a:hover {
 }
 
 h1 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: 'Vazir-Bold';
+    padding: 2px 0;
+    margin: 1px 0;
 }
 
 h2 {
-    font-size: 1.3em;
-    font-family: 'Vazir-Bold';
-}
-
-h3, h4 {
     font-size: 1.2em;
     font-family: 'Vazir-Bold';
     padding: 2px 0;
     margin: 1px 0;
 }
 
-h5, h6 {
+h3, h4 {
     font-size: 1.1em;
     font-family: 'Vazir-Bold';
+    padding: 2px 0;
+    margin: 1px 0;
+}
+
+h5, h6 {
+    font-size: 1em;
+    font-family: 'Vazir-Bold';
+    padding: 2px 0;
+    margin: 1px 0;
 }
 
 /* Bootstrap custom */
@@ -619,7 +625,7 @@ form .icon-question-sign {
 .widget-media-list-summery {}
 
 .pi-header-system .carousel-caption {
-    background: rgba(0, 52, 89, 0.50) !important;
+    background: rgba(0, 52, 89, 0.30) !important;
     padding: 5px 10px;
     background: none;
     margin-top: 3px;
@@ -632,4 +638,22 @@ form .icon-question-sign {
 .pi-header-system .carousel-caption h4 {
     font-size: 1.5em !important;
     margin: 20px 0;
+}
+
+.news-item-block-verticalwide .media {
+    text-align: center !important;
+    position: relative;
+}
+
+.news-item-block-verticalwide .media h3 {
+    position: absolute;
+    margin-top: -40px !important;
+    height: 40px;
+    background: rgba(0,0,0, .5);
+    width: 100%;
+    padding-top: 10px;
+}
+
+.news-item-block-verticalwide .media h3 a {
+    color: #fff;
 }
