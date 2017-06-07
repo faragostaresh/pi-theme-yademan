@@ -116,13 +116,13 @@ $breadcrumbs = $this->breadcrumb(
                 <div class="col-md-3 pi-header-logo">
                     <?php if ($module == 'system') { ?>
                         <h1>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
                                 <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
                             </a>
                         </h1>
                     <?php } else { ?>
                         <h2>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
                                 <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
                             </a>
                         </h2>
@@ -323,19 +323,19 @@ $breadcrumbs = $this->breadcrumb(
                         <h3>دسته بندی تورها</h3>
                         <ul class="list-unstyled">
                             <li>
-                                <a title="همه تورها" href="<?php echo Pi::url($this->url('home')); ?>event"><i class="fa fa-angle-left"></i> همه تورها</a>
+                                <a title="همه تورها" href="<?php echo Pi::url($this->url('home')); ?>/event"><i class="fa fa-angle-left"></i> همه تورها</a>
                             </li>
                             <li>
-                                <a title="تورهای طبیعت گردی" href="<?php echo Pi::url($this->url('home')); ?>event/ecotourism"><i class="fa fa-angle-left"></i> تورهای طبیعت گردی</a>
+                                <a title="تورهای طبیعت گردی" href="<?php echo Pi::url($this->url('home')); ?>/event/ecotourism"><i class="fa fa-angle-left"></i> تورهای طبیعت گردی</a>
                             </li>
                             <li>
-                                <a title="تورهای کوهنوردی" href="<?php echo Pi::url($this->url('home')); ?>event/mountaineering"><i class="fa fa-angle-left"></i> تورهای کوهنوردی</a>
+                                <a title="تورهای کوهنوردی" href="<?php echo Pi::url($this->url('home')); ?>/event/mountaineering"><i class="fa fa-angle-left"></i> تورهای کوهنوردی</a>
                             </li>
                             <li>
-                                <a title="تورهای تاریخی" href="<?php echo Pi::url($this->url('home')); ?>event/historical"><i class="fa fa-angle-left"></i> تورهای تاریخی</a>
+                                <a title="تورهای تاریخی" href="<?php echo Pi::url($this->url('home')); ?>/event/historical"><i class="fa fa-angle-left"></i> تورهای تاریخی</a>
                             </li>
                             <li>
-                                <a title="تورهای رصد" href="<?php echo Pi::url($this->url('home')); ?>event/observation"><i class="fa fa-angle-left"></i> تورهای رصد</a>
+                                <a title="تورهای رصد" href="<?php echo Pi::url($this->url('home')); ?>/event/observation"><i class="fa fa-angle-left"></i> تورهای رصد</a>
                             </li>
                         </ul>
                     </div>
@@ -343,19 +343,19 @@ $breadcrumbs = $this->breadcrumb(
                         <h3>سایر بخش ها</h3>
                         <ul class="list-unstyled">
                             <li>
-                                <a title="نکات سفر" href="<?php echo Pi::url($this->url('home')); ?>page/tips"><i class="fa fa-angle-left"></i> نکات سفر</a>
+                                <a title="نکات سفر" href="<?php echo Pi::url($this->url('home')); ?>/page/tips"><i class="fa fa-angle-left"></i> نکات سفر</a>
                             </li>
                             <li>
-                                <a title="سوالات متداول" href="<?php echo Pi::url($this->url('home')); ?>page/faq"><i class="fa fa-angle-left"></i> سوالات متداول</a>
+                                <a title="سوالات متداول" href="<?php echo Pi::url($this->url('home')); ?>/page/faq"><i class="fa fa-angle-left"></i> سوالات متداول</a>
                             </li>
                             <li>
-                                <a title="تماس با ما" href="<?php echo Pi::url($this->url('home')); ?>contact"><i class="fa fa-angle-left"></i> تماس با ما</a>
+                                <a title="تماس با ما" href="<?php echo Pi::url($this->url('home')); ?>/contact"><i class="fa fa-angle-left"></i> تماس با ما</a>
                             </li>
                             <li>
-                                <a title="درباره ما" href="<?php echo Pi::url($this->url('home')); ?>page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a>
+                                <a title="درباره ما" href="<?php echo Pi::url($this->url('home')); ?>/page/about-us"><i class="fa fa-angle-left"></i> درباره ما</a>
                             </li>
                             <li>
-                                <a title="شرایط و مقررات" href="<?php echo Pi::url($this->url('home')); ?>page/term-and-condition"><i class="fa fa-angle-left"></i> شرایط و مقررات</a>
+                                <a title="شرایط و مقررات" href="<?php echo Pi::url($this->url('home')); ?>/page/term-and-condition"><i class="fa fa-angle-left"></i> شرایط و مقررات</a>
                             </li>
                         </ul>
                     </div>
@@ -365,9 +365,9 @@ $breadcrumbs = $this->breadcrumb(
                         <div class="pi-footer-social text-right">
                             <h4>شبکه های اجتماعی</h4>
                             <ul class="list-inline">
-                                <li><a target="_blank" title="https://www.instagram.com/yademan_group" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a target="_blank" title="https://www.telegram.me/yademan_group" href="#"><i class="fa fa-telegram"></i></a></li>
-                                <li><a target="_blank" title="https://www.twitter.com/yademangroup" href="#"><i class="fa fa-twitter-square"></i></a></li>
+                                <li><a target="_blank" title="https://www.instagram.com/yademan_group" href="https://www.instagram.com/yademan_group"><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_blank" title="https://www.telegram.me/yademan_group" href="https://www.telegram.me/yademan_group"><i class="fa fa-telegram"></i></a></li>
+                                <li><a target="_blank" title="https://www.twitter.com/yademangroup" href="https://www.twitter.com/yademangroup"><i class="fa fa-twitter-square"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -378,7 +378,7 @@ $breadcrumbs = $this->breadcrumb(
     <div class="pi-footer-copyright clearfix">
         <div class="container">
             <div class="row">
-                <div class="text-left col-md-6" data-rel="license">تمام حقوق مطالب برای وب سایت <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>"><?php echo _escape($sitename); ?></a> محفوظ است.</div>
+                <div class="text-left col-md-6" data-rel="license">تمام حقوق مطالب برای وب سایت <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>"><?php echo _escape($sitename); ?></a> محفوظ است.</div>
                 <div class="text-right col-md-6" data-rel="license">طراحی و توسعه <a title="فراگسترش" href="http://www.faragostaresh.com" target="_blank">فراگسترش</a></div>
             </div>
         </div>

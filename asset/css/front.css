@@ -657,3 +657,7 @@ form .icon-question-sign {
 .news-item-block-verticalwide .media h3 a {
     color: #fff;
 }
+
+.event-single-main-box {
+    text-align: justify;
+}
