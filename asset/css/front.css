@@ -6,6 +6,7 @@ html {
 
 body {
     background-color: #fff;
+    font-size: 13px;
 }
 
 a {
@@ -409,6 +410,10 @@ form .icon-question-sign {
     background-color: #0585CA;
 }
 
+.pi-userbar a {
+    color: #333;
+    font-size: 12px;
+}
 
 .pi-header .pi-header-pinkbar {
     background-color: #0585CA;
@@ -426,7 +431,7 @@ form .icon-question-sign {
 .pi-header .pi-header-pinkbar .pi-header-pinkbar-maintext {
     color: #fff;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 25px;
     font-family: 'Vazir-Bold';
 }
@@ -658,6 +663,31 @@ form .icon-question-sign {
     color: #fff;
 }
 
+.news-item-block-verticalwide .media img {
+    width: 100%;
+}
+
 .event-single-main-box {
     text-align: justify;
 }
+
+
+
+
+
+#pi-system .pi-header-top {
+    position: absolute;
+    z-index: 10000000 !important;
+    margin: 0 auto;
+    width: 100%;
+    background: rgba(255,255,255, .5);
+}
+
+#pi-system .pi-header-top .navbar-default {
+    background: rgba(0,0,0, .5);
+}
+
+
+
+
+

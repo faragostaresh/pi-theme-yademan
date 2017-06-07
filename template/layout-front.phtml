@@ -110,7 +110,7 @@ $breadcrumbs = $this->breadcrumb(
 </head>
 <body id="pi-<?php echo $module; ?>" class="pi-locale-<?php echo $locale; ?>">
 <header class="pi-header">
-    <div class="pi-header-body">
+    <div class="pi-header-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 pi-header-logo">
@@ -133,25 +133,30 @@ $breadcrumbs = $this->breadcrumb(
                 </div>
             </div>
         </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
+                </div>
+            </div>
+        </nav>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
-            </div>
+    <?php if ($module == 'system') { ?>
+        <div class="pi-header-system">
+            <?php echo $this->widget('widget-highlights'); ?>
         </div>
-    </nav>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.carousel').carousel({interval: 7000});
+            });
+        </script>
+    <?php } ?>
     <div class="pi-header-body">
-        <?php if ($module == 'system') { ?>
-            <div class="pi-header-system">
-                <?php echo $this->widget('widget-highlights'); ?>
-            </div>
-        <?php } ?>
         <div class="pi-header-pinkbar">
             <div class="container">
                 <div class="row">
@@ -159,7 +164,7 @@ $breadcrumbs = $this->breadcrumb(
                         <?php echo $this->widget('search-search'); ?>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="pi-header-pinkbar-maintext">ما در در سفرهایمان هیچ چیز به جای نمی گذاریم جز رد پا، هیچ چیز نمیکشیم جز زمان ، هیچ چیز به ارمغان نمی آوریم جز خاطرات و حفظ محیط زیست را سر لوحه سفرمان قرار میدهیم </div>
+                        <div class="pi-header-pinkbar-maintext">ما در در سفرهایمان هیچ چیز به جای نمی گذاریم جز رد پا، هیچ چیز نمیکشیم جز زمان ، هیچ چیز به ارمغان نمی آوریم جز خاطرات <br /> و حفظ محیط زیست را سر لوحه سفرمان قرار میدهیم </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
                         <div class="about-icon">
