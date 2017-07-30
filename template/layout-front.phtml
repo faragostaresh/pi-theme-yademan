@@ -116,13 +116,13 @@ $breadcrumbs = $this->breadcrumb(
                 <div class="col-md-3 pi-header-logo">
                     <?php if ($module == 'system') { ?>
                         <h1>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
                                 <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
                             </a>
                         </h1>
                     <?php } else { ?>
                         <h2>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>/" title="<?php echo _escape($sitename); ?>">
+                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
                                 <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
                             </a>
                         </h2>
@@ -139,6 +139,7 @@ $breadcrumbs = $this->breadcrumb(
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
+                    <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="<?php echo Pi::url($this->url('home')); ?>"><?php echo _escape($sitename); ?></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
@@ -147,7 +148,7 @@ $breadcrumbs = $this->breadcrumb(
         </nav>
     </div>
     <?php if ($module == 'system') { ?>
-        <div class="pi-header-system">
+        <div class="pi-header-system hidden-xs">
             <?php echo $this->widget('widget-highlights'); ?>
         </div>
         <script type="text/javascript">
@@ -164,7 +165,7 @@ $breadcrumbs = $this->breadcrumb(
                         <?php echo $this->widget('search-search'); ?>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="pi-header-pinkbar-maintext">ما در در سفرهایمان هیچ چیز به جای نمی گذاریم جز رد پا، هیچ چیز نمیکشیم جز زمان ، هیچ چیز به ارمغان نمی آوریم جز خاطرات <br /> و حفظ محیط زیست را سر لوحه سفرمان قرار میدهیم </div>
+                        <div class="pi-header-pinkbar-maintext">ما در سفرهایمان هیچ چیز به جای نمی گذاریم جز رد پا، هیچ چیز نمیکشیم جز زمان ، هیچ چیز به ارمغان نمی آوریم جز خاطرات <br /> و حفظ محیط زیست را سر لوحه سفرمان قرار میدهیم </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pi-header-pinkbar-box">
                         <div class="about-icon">
@@ -366,7 +367,7 @@ $breadcrumbs = $this->breadcrumb(
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>درباره ما</h3>
-                        <p>گروه کوهنوردی و طبیعت گردی یادمان با مجوز رسمی از فدراسیون کوهنوردی و صعودهای ورزشی و هیئت کوهنوردی استان تهران از سال 1388 در دانشگاه علوم تحقیقات تهران و با همکاری کانون دانشجویی هلال احمر فعالیت های آموزشی و ورزشی خود را آغاز نموده و امروز به صورت مستقل به فعالیت های خود ادامه داده و از معدود گروه های کوهنوردی و طبیعت گردی می‏ باشد</p>
+                        <p>گروه  طبیعت گردی یادمان در سالهای ابتدایی فعالیت خود از سال 1388 با کسب مجوز رسمی از فدراسیون کوهنوردی و صعودهای ورزشی ج ا ا و هیئت کوهنوردی استان تهران در دانشگاه علوم تحقیقات تهران و با همکاری کانون دانشجویی هلال احمر فعالیت های آموزشی و ورزشی خود را آغاز نموده و امروز به صورت مستقل  زیر نظر سازمان میراث فرهنگی، صنایع دستی و گردشگری به فعالیت های خود ادامه میدهد و از معدود گروه های طبیعت گردی ای می‏باشد که اکثر اعضای آن دانشجو و از دانشگاه های مختلف شهر تهران و بعضاً دیگر شهر های کشورتشکیل میدهند.</p>
                         <div class="pi-footer-social text-right">
                             <h4>شبکه های اجتماعی</h4>
                             <ul class="list-inline">

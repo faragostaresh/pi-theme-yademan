@@ -671,23 +671,16 @@ form .icon-question-sign {
     text-align: justify;
 }
 
+@media (min-width: 768px) {
+    #pi-system .pi-header-top {
+        position: absolute;
+        z-index: 10000000 !important;
+        margin: 0 auto;
+        width: 100%;
+        background: rgba(255, 255, 255, .5);
+    }
 
-
-
-
-#pi-system .pi-header-top {
-    position: absolute;
-    z-index: 10000000 !important;
-    margin: 0 auto;
-    width: 100%;
-    background: rgba(255,255,255, .5);
+    #pi-system .pi-header-top .navbar-default {
+        background: rgba(0, 0, 0, .5);
+    }
 }
-
-#pi-system .pi-header-top .navbar-default {
-    background: rgba(0,0,0, .5);
-}
-
-
-
-
-
