@@ -7,6 +7,7 @@ html {
 body {
     background-color: #fff;
     font-size: 13px;
+    text-align: justify !important;
 }
 
 a {
@@ -683,4 +684,12 @@ form .icon-question-sign {
     #pi-system .pi-header-top .navbar-default {
         background: rgba(0, 0, 0, .5);
     }
+}
+
+.widget-list-media-single-image .img-responsive {
+    margin: 0 auto;
+}
+
+.widget-list-media-single-image img {
+    border-radius: 50%;
 }
