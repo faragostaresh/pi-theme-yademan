@@ -693,3 +693,26 @@ form .icon-question-sign {
 .widget-list-media-single-image img {
     border-radius: 50%;
 }
+
+
+.recent-event-single {
+    position: relative;
+}
+
+.event-information-box {
+    position: absolute;
+    margin-top: -140px !important;
+    height: 140px;
+    background: rgba(0,0,0, .4);
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+}
+
+.event-information-box h3 {
+    margin-bottom: 15px;
+}
+
+.event-information-box a {
+    color: #fff;
+}
