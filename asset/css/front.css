@@ -20,28 +20,24 @@ a:hover {
 
 h1 {
     font-size: 1.3em;
-    font-family: 'Vazir-Bold';
     padding: 2px 0;
     margin: 1px 0;
 }
 
 h2 {
     font-size: 1.2em;
-    font-family: 'Vazir-Bold';
     padding: 2px 0;
     margin: 1px 0;
 }
 
 h3, h4 {
     font-size: 1.1em;
-    font-family: 'Vazir-Bold';
     padding: 2px 0;
     margin: 1px 0;
 }
 
 h5, h6 {
     font-size: 1em;
-    font-family: 'Vazir-Bold';
     padding: 2px 0;
     margin: 1px 0;
 }
@@ -434,7 +430,6 @@ form .icon-question-sign {
     text-align: center;
     font-size: 1.1em;
     margin-bottom: 25px;
-    font-family: 'Vazir-Bold';
 }
 
 .pi-header .pi-header-pinkbar .about-icon {
@@ -450,7 +445,6 @@ form .icon-question-sign {
 .pi-header .pi-header-pinkbar .about-title,
 .pi-header .pi-header-pinkbar .about-title a {
     color: #fff;
-    font-family: 'Vazir-Bold';
     font-size: 1.4em;
 }
 
@@ -566,6 +560,7 @@ form .icon-question-sign {
     -webkit-box-shadow: 0px -2px 5px rgba(0, 0, 0, .05);
     box-shadow: 0px -2px 5px rgba(0, 0, 0, .05);
     color: #ccc;
+    line-height: 20px;
 }
 
 .pi-footer a {
@@ -574,6 +569,10 @@ form .icon-question-sign {
 
 .pi-footer a:hover {
     color: #ccc;
+}
+
+.pi-footer h3 {
+    font-size: 20px;
 }
 
 .pi-footer .pi-footer-body {
@@ -597,6 +596,13 @@ form .icon-question-sign {
 
 .pi-footer .pi-footer-social ul li {
     font-size: 25px;
+}
+
+.pi-footer .pi-footer-main {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 /* panel */
@@ -672,7 +678,7 @@ form .icon-question-sign {
     text-align: justify;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     #pi-system .pi-header-top {
         position: absolute;
         z-index: 10000000 !important;
@@ -684,7 +690,7 @@ form .icon-question-sign {
     #pi-system .pi-header-top .navbar-default {
         background: rgba(0, 0, 0, .5);
     }
-}
+}*/
 
 .widget-list-media-single-image .img-responsive {
     margin: 0 auto;
